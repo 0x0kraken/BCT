@@ -26,9 +26,9 @@ contract Nudex is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC20Permit, ERC
     event TransferDelayUpdated(uint256 delay);
 
     constructor(address initialOwner, address initialFeeRecipient, uint256 initialTransactionFee)
-        ERC20("Nudex", "NUD")
+        ERC20("BEICOLA TOKEN", "BCT")
         Ownable(initialOwner)
-        ERC20Permit("Nudex")
+        ERC20Permit("BEICOLA TOKEN")
     {
         require(initialTransactionFee <= 10000, "Fee cannot exceed 100%");
         _feeRecipient = initialFeeRecipient;
